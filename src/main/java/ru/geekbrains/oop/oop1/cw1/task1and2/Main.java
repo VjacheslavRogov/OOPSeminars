@@ -1,4 +1,6 @@
-package ru.geekbrains.oop.oop1.cw1;
+package ru.geekbrains.oop.oop1.cw1.task1and2;
+
+import ru.geekbrains.oop.oop1.cw1.task1and2.Cat;
 
 public class Main {
     public static void main(String[] args) {
