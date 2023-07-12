@@ -1,4 +1,4 @@
 package ru.geekbrains.oop.oop6.hw;
 
-public class hw6 {
+public class Main {
 }

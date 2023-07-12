@@ -1,4 +1,4 @@
 package ru.geekbrains.oop.oop2.hw;
 
-public class hw2 {
+public class Main {
 }
