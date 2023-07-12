@@ -1,4 +1,4 @@
-package ru.geekbrains.oop.oop1.cw1.task1and2;
+package ru.geekbrains.oop.oop1.cw.task1and2;
 
 public class Animal {
 

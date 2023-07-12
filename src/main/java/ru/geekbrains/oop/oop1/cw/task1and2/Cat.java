@@ -1,6 +1,4 @@
-package ru.geekbrains.oop.oop1.cw1.task1and2;
-
-import ru.geekbrains.oop.oop1.cw1.task1and2.Animal;
+package ru.geekbrains.oop.oop1.cw.task1and2;
 
 public class Cat extends Animal {
     private String color;
