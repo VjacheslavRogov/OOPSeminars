@@ -2,21 +2,12 @@ package ru.geekbrains.oop.oop1.cw.task1and2;
 
 public class Animal {
 
-    private String name;
-
-    public Animal(String name) {
-        this.name = name;
-    }
+    protected String name;
 
     public Animal() {
-
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Animal(String name) {
         this.name = name;
     }
 
@@ -25,10 +16,10 @@ public class Animal {
     }
 
     public void voice() {
-        System.out.println("Животное по имени: " + name + " издаёт звук");
+        System.out.println("Звук");
     }
 
     public void jump() {
-        System.out.println("Животное по имени: " + name + " прыгает!");
+        System.out.println("Прыхок");
     }
 }

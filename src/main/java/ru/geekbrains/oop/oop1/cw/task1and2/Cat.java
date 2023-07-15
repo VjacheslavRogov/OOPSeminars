@@ -5,16 +5,7 @@ public class Cat extends Animal {
     private Integer age;
 
     public Cat(String name, String color, Integer age) {
-        super(name);
-        this.color = color;
-        if (age >= 0) {
-            this.age = age;
-        } else {
-            System.out.println("Возраст введён некорректно!");
-        }
-    }
-
-    public Cat(String color, Integer age) {
+        this.name = name;
         this.color = color;
         this.age = age;
     }
@@ -22,9 +13,12 @@ public class Cat extends Animal {
     public Cat() {
     }
 
-    @Override
-    public void animalInfo() {
-        System.out.println("Кот : " + super.getName() + " с цветом шерсти: " + getColor() + " прожил : " + getAge() + " лет");
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getColor() {
@@ -40,11 +34,31 @@ public class Cat extends Animal {
     }
 
     public void setAge(Integer age) {
-        if (age >= 0) {
+        if (age > 0 && age < 30) {
             this.age = age;
         } else {
             System.out.println("Возраст введён некорректно!");
         }
-
     }
+
+    @Override
+    public String toString(){
+        return "Cat{" +
+                "color='" + color + '\'' +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    @Override
+    public void animalInfo(){
+        System.out.println("Это кот с именем " + name
+                +", с возрастом-"+ age + " , с цветом шерсти: " + color);
+    }
+
+    @Override
+    public void voice() { System.out.println("мявк! мявк!"); }
+
+    @Override
+    public void jump() { System.out.println("прыжек кота!"); }
 }
