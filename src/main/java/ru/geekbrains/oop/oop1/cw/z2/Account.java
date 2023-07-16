@@ -1,4 +1,4 @@
-package ru.geekbrains.oop.oop1.cw.task4;
+package ru.geekbrains.oop.oop1.cw.z2;
 
 public class Account {
     private Integer numAccount;
