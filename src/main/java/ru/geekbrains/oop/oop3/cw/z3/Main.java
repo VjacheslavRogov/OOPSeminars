@@ -35,29 +35,40 @@ public class Main {
                                     "\nПопытка: " + answer.getNumTry());
                         }
                     }
-                    logger.info("message");
                 } else if (switch1 == 2) {
                     EngGame engGame = new EngGame();
+                    System.out.println("Введите количество символов:" +
+                            "\nВведите количество попыток:");
                     Scanner scanner2 = new Scanner(System.in);
                     engGame.start(scanner2.nextInt(), scanner2.nextInt());
                     scanner2.nextLine();
+                    System.out.println("Игра началась");
                     while (!engGame.getGameStatus().equals(GameStatus.FINISH)) {
                         String value = scanner2.nextLine().toString().toLowerCase();
                         Answer answer = engGame.inputValue(value);
                         if (answer != null) {
-                            System.out.println("answer = " + answer);
+                            System.out.println("Ваши результаты: " +
+                                    "\nБыков: " + answer.getBull() +
+                                    "\nКоров: " + answer.getCow() +
+                                    "\nПопытка: " + answer.getNumTry());
                         }
                     }
                 } else if (switch1 == 3) {
                     NumberGame numberGame = new NumberGame();
+                    System.out.println("Введите количество символов:" +
+                            "\nВведите количество попыток:");
                     Scanner scanner2 = new Scanner(System.in);
                     numberGame.start(scanner2.nextInt(), scanner2.nextInt());
                     scanner2.nextLine();
+                    System.out.println("Игра началась");
                     while (!numberGame.getGameStatus().equals(GameStatus.FINISH)) {
                         String value = scanner2.nextLine().toString().toLowerCase();
                         Answer answer = numberGame.inputValue(value);
                         if (answer != null) {
-                            System.out.println("answer = " + answer);
+                            System.out.println("Ваши результаты: " +
+                                    "\nБыков: " + answer.getBull() +
+                                    "\nКоров: " + answer.getCow() +
+                                    "\nПопытка: " + answer.getNumTry());
                         }
                     }
                 } else {
